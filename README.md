@@ -1,6 +1,7 @@
 # GymTrainer-AI
 
 > AI-powered workout tracking and coaching using real-time computer vision and LLMs
+> https://gymtrainer-ai.streamlit.app/
 
 ## 📑 Table of Contents
 
