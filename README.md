@@ -1,7 +1,8 @@
 # GymTrainer-AI
 
 > AI-powered workout tracking and coaching using real-time computer vision and LLMs
-> https://gymtrainer-ai.streamlit.app/
+>
+> https://gymtrainerlanding.netlify.app/
 
 ## 📑 Table of Contents
 
