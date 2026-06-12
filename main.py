@@ -47,7 +47,7 @@ def main():
             llm_coach = LLMCoach(groq_client)
             tts = TextToSpeech()
             st.session_state.voice_pipeline = VoicePipeline(llm_coach, tts)
-            st.success("Voice pipeline initialized")
+            
         except Exception as e:
             st.error(f"Voice pipeline failed: {e}")
             st.session_state.voice_pipeline = None
