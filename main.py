@@ -2,17 +2,6 @@ import streamlit as st
 import os
 import time
 import pandas as pd
-
-import pkg_resources
-
-packages = sorted(
-    [f"{d.project_name}=={d.version}" for d in pkg_resources.working_set]
-)
-
-st.write(packages)
-st.stop()
-
-
 from services.auth.login_wall import render_login_wall
 from services.state.session_defaults import initial_session_defaults
 from services.config.workout_config import EXERCISE_OPTIONS
@@ -26,7 +15,6 @@ from groq import Groq
 from services.coaching.llm import LLMCoach
 from services.coaching.tts import TextToSpeech
 from services.coaching.voice_pipeline import VoicePipeline, autoplay_audio
-
 
 def main():
 
@@ -68,7 +56,7 @@ def main():
     workout_started = st.session_state.get("workout_started", False)
     
     with st.sidebar:
-        st.title("🏋️‍♂️ Apna AI Coach")
+        st.title("🏋️‍♂️ AI Gym Coach")
 
         if st.session_state.username:
             st.caption(f"👤 Login as {st.session_state.username}")
